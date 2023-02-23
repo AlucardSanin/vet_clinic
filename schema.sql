@@ -2,20 +2,20 @@
 CREATE database vet_clinic;
 
 CREATE TABLE owners (
-    id INT GENERATED ALWAYS AS IDENTITY,
+    id INT GENERATED ALWAYS AS IDENTITY NOT NULL,
     full_name VARCHAR(250),
     age INT,
     PRIMARY KEY(id)
 );
 
 CREATE TABLE species (
-    id INT GENERATED ALWAYS AS IDENTITY,
+    id INT GENERATED ALWAYS AS IDENTITY NOT NULL,
     name VARCHAR(250),
     PRIMARY KEY(id)
 );
 
 CREATE TABLE animals (
-    id INT GENERATED ALWAYS AS IDENTITY,
+    id INT GENERATED ALWAYS AS IDENTITY NOT NULL,
     name VARCHAR(100),
     date_of_birth DATE,
     escape_attempts INT,
