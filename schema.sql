@@ -17,11 +17,19 @@ CREATE TABLE species (
 CREATE TABLE animals (
     id INT GENERATED ALWAYS AS IDENTITY NOT NULL,
     name VARCHAR(100),
+    species VARCHAR(100),
     date_of_birth DATE,
     escape_attempts INT,
     neutered BOOLEAN,
     weight_kg FLOAT(2),
-    species_id INT REFERENCES species(id),
-    owner_id INT REFERENCES owners(id),
     PRIMARY KEY(id) 
 );
+
+ALTER TABLE animals 
+DROP COLUMN species;
+
+ALTER TABLE animals
+ADD COLUMN species_id INT REFERENCES species(id);
+
+ALTER TABLE animals
+ADD COLUMN owner_id INT REFERENCES owners(id);
