@@ -33,3 +33,24 @@ ADD COLUMN species_id INT REFERENCES species(id);
 
 ALTER TABLE animals
 ADD COLUMN owner_id INT REFERENCES owners(id);
+
+/* DAY 4 */
+
+CREATE TABLE vets (
+    id INT GENERATED ALWAYS AS IDENTITY NOT NULL,
+    name VARCHAR(100),
+    age INT,
+    date_of_graduation DATE,
+    PRIMARY KEY(id)
+);
+
+CREATE TABLE specializations (
+    species_id INT NULL REFERENCES species(id) ON DELETE CASCADE,
+    vet_id INT NULL REFERENCES vets(id) ON DELETE CASCADE
+);
+
+CREATE TABLE visits (
+    animal_id INT NULL REFERENCES animals(id) ON DELETE CASCADE,
+    vet_id INT NULL REFERENCES vets(id) ON DELETE CASCADE,
+    date_of_visit DATE NOT NULL
+);
