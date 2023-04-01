@@ -33,7 +33,6 @@ After you're finished please remove all the comments and instructions!
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
-  - [🚀 Live Demo ](#-live-demo-)
   - [💻 Getting Started ](#-getting-started-)
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
@@ -71,18 +70,8 @@ Coded entirely with postgreSQL
 
 ### Key Features <a name="key-features"></a>
 
-- **Create Objects**
-- **Reference attributes**
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- LIVE DEMO -->
-
-## 🚀 Live Demo <a name="live-demo"></a>
-
-> Link to the deployed project.
-
-- [Coming soon...](https://github.com/AlucardSanin/School-Library)
+- **Create tables**
+- **Reference data**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -137,7 +126,7 @@ Initialize the psql console and make sure to be inside the cloned repository fol
 > Describe 1 - 3 features you will add to the project.
 
 - [ ] **Friendly User Interface**
-- [ ] **Deployment**
+- [ ] **Complex relationships**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
